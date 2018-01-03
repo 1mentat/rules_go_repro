@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package repro;
+
+import "google/protobuf/timestamp.proto";
+
+message Repro {
+    google.protobuf.Timestamp created_at = 1;
+}
+
+service ReproService {
+    rpc Echo(Repro) returns (Repro) {}
+}

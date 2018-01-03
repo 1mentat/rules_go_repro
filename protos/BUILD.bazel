@@ -1,0 +1,10 @@
+proto_library(
+    name = "repro_proto",
+    srcs = [
+        "repro.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:timestamp_proto",
+    ],
+    visibility = ["//visibility:public"],
+)
