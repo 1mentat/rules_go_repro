@@ -6,6 +6,6 @@ go_grpc_library(
     proto = "//protos:repro_proto",
     visibility = ["//visibility:public"],
     deps = [
-        "@com_google_protobuf//:timestamp_proto",
+        "@com_github_golang_protobuf//ptypes/timestamp:go_default_library",
     ],
 )
